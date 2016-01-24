@@ -5,7 +5,7 @@ var crossShadowColor;
 function setup() {
    	createCanvas(windowWidth, windowHeight);
    	backgroundColor = color(random(255), random(255), random(255));
-   	crossShadowColor = setColor(0,0,0);
+   	crossShadowColor = color(0,0,0);
    	crossColor = color(random(255), random(255), random(255));
 }
 
@@ -21,7 +21,7 @@ function mousePressed() {
 	crossColor = color(random(255), random(255), random(255));
 }
 
-function cross(xPos,yPos,foreground,shadow) {
+function cross(xPos,yPos,foreground,crossShadowColor) {
 	//background cross
 	fill(crossShadowColor);
 	rect(xPos - 1, yPos - 1, 50, 10);
