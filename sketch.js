@@ -25,7 +25,7 @@ function cross(xPos,yPos,crossColor,crossShadowColor) {
 	//background cross
 	fill(crossShadowColor);
 	rect(xPos - 1, yPos - 1, 50, 10);
-	rect(xPos + 20 - 1, y - 20 - 1, 10, 50);
+	rect(xPos + 19, yPos - 21, 10, 50);
 
 	//foreground cross
 	noStroke();
