@@ -21,7 +21,7 @@ function mousePressed() {
 	crossColor = color(random(255), random(255), random(255));
 }
 
-function cross(xPos,yPos,foreground,crossShadowColor) {
+function cross(xPos,yPos,crossColor,crossShadowColor) {
 	//background cross
 	fill(crossShadowColor);
 	rect(xPos - 1, yPos - 1, 50, 10);
@@ -29,7 +29,7 @@ function cross(xPos,yPos,foreground,crossShadowColor) {
 
 	//foreground cross
 	noStroke();
-	fill(foreground);
+	fill(crossColor);
 	rect(xPos, yPos, 50, 10);
 	rect(xPos + 20, yPos - 20, 10, 50);
 }
